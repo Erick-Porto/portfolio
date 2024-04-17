@@ -1,0 +1,149 @@
+<!DOCTYPE html>
+<html lang="PT-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" type="text/css" href="./src/style/style.css">
+    <link rel="stylesheet" type="text/css" href="./src/style/config.css">
+    <title>Erick Porto</title>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+    <script>
+        $(document).ready(function(){
+          $("a").on('click',function(event){
+            if (this.hash!==""){
+              event.preventDefault();
+              var hash=this.hash;
+              $('html,body').animate({scrollTop:$(hash).offset().top},800,function(){window.location.hash=hash;});
+            }
+          });
+        });
+    </script>
+</head>
+<body>
+    <aside>
+        <div id="sidebar">
+            <ul id="nav-menu">
+                <li><a href="#src-portfolio">Portfolio</a></li>
+                <li> ° </li>
+                <li> ° </li>
+                <li><a href="#src-about">Sobre</a></li>
+                <li> ° </li>
+                <li> ° </li>
+                <li><a href="#src-forms">Contatar</a></li>
+            </ul>
+        </div>
+    </aside>
+    <section id="src-hw">
+        <div class="centralizer ta-center">
+            <img src="/src/images/profile.jpeg" class="profile-image">
+            <span class="title">Olá, sou Erick. Seja bem-vindo ao meu portifolio.</span>
+            <br/>
+            <div>
+                <a class="button" target="_blank" href="./src/pdf/curriculo-extenso.pdf">Currículo</a>
+                <a class="button" target="_blank" href="https://www.linkedin.com/in/erick-porto">LinkedIn</a>
+                <a class="button" target="_blank" href="https://github.com/Erick-Porto">GitHub</a>
+            </div>
+        </div>
+        <div class="work ta-center">
+            <a href="#src-portfolio">Conheça meu trabalho!</a>
+        </div>
+    </section>
+
+    <section id="src-portfolio" class="slide">
+        <div class="container">
+            <div class="carousel-p">
+                <h1>Projetos</h1>
+            </div>
+            <div class="carousel-s">
+                <h1>_________</h1>
+            </div>
+        </div>
+    </section>
+
+    <section id="src-about" class="slide">
+        <div class="container">
+            <div class="about-card">
+                <img src="./src/images/profile.jpeg" class="about-image">
+                <div class="about">
+                    <span class="title">Erick Ribeiro Porto</span>
+                    <span class="subtitle">| Desenvolvedor Web</span>
+                    <p class="paragraph">
+                        Olá sou Erick, um desenvolvedor web júnior determinado e entusiasta, pronto para contribuir com sua energia e habilidades. Com 6 anos de experiência prática em desenvolvimento web, estou comprometido em aprender e crescer mais.
+                    </p>
+                    <br>
+                    <p class="paragraph">
+                        Carreira Profissional:<br/>
+                        Atualmente estou cursando Sistemas de Computação pela Universidade Federal Fluminense, além de já ser Técnico em Informática pelo Instituto Federal do Rio de Janeiro, onde adquiri uma base sólida em programação e desenvolvimento de software. Desde então, busco oportunidades para aplicar os meus conhecimentos teóricos em novos desafios.
+                    </p>
+                    <p class="paragraph"> Desenvolvimento e Conquistas:<br/>
+                        Tenho experiência no desenvolvimento de sites e aplicações web utilizando tecnologias como HTML, CSS e JavaScript. Participei ativamente em alguns projetos, contribuindo com ideias e soluções criativas.
+                    </p>
+                    <br/>
+                    <p class="paragraph"> Tecnologias: <br/>
+                        Linguagens: HTML5, CSS3, JavaScript, JAVA, C, C#<br/>
+                        Frameworks: Bootstrap, jQuery<br/>
+                        Ferramentas: Git<br/>
+                    </p>
+                    <br/>
+                    <p class="paragraph">
+                        Possuo também conhecimentos em bancos de dados relacionais e em versionamento.
+                        Estou ansioso para expandir meus conhecimentos e habilidades em outras áreas, como frameworks de JavaScript (por exemplo, React.js, Vue.js) e em tecnologias de back-end (por exemplo, Node.js).
+                    </p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section id="src-forms" class="slide">
+        <div class="container">
+            <span class="title">Entre em contato</span>
+            <form action="#">
+                <div class="form-row">
+                   <div class="input-data">
+                      <input id="name" type="text" required>
+                      <div class="underline"></div>
+                      <label for="name">Nome Completo</label>
+                   </div>
+                </div>
+
+                <div class="form-row">
+                   <div class="input-data">
+                      <input id="email" type="text" required>
+                      <div class="underline"></div>
+                      <label for="email">Endereço de E-mail</label>
+                   </div>
+                   <div class="input-data">
+                      <input id="subject" type="text" required>
+                      <div class="underline"></div>
+                      <label for="subject">Assunto</label>
+                   </div>
+                </div>
+
+                <div class="form-row">
+                    <div class="input-data textarea">
+                        <textarea id="content" rows="8" maxlength="354" cols="80" required></textarea>
+                        <br />
+                        <div class="underline"></div>
+                        <label for="content">Digite sua mensagem</label>
+                        <br />
+                    </div>
+                </div>
+                <div class="form-row">
+                    <div class="input-data">
+                        <input class="submit-button" type="submit" value="Enviar">
+                    </div>
+                </div>
+            </form>
+        </div>
+        <footer>
+            <div>
+                <span class="subtitle">©Erick Porto</span>
+                <ul>
+                    <li><a target="_blank" href="https://www.linkedin.com/in/erick-porto">LinkedIn</a></li>
+                    <li><a target="_blank" href="https://github.com/Erick-Porto">GitHub</a></li>
+                </ul>
+            </div>
+        </footer>
+    </section>
+</body>
+</html>

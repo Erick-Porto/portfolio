@@ -1,0 +1,20 @@
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100..900;1,100..900&family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&display=swap');
+
+:root{
+    --small:33%;
+    --medium:50%;
+    --large:75%;
+
+    --color-palette-1: #ebebe3;
+    --color-palette-2: #778da9;
+    --color-palette-3: #415a77;
+    --color-palette-4: #062430;
+
+    --negative-color:red;
+    --afirmative-color:green;
+    --informative-color:aqua;
+    --danger-color:orange;
+
+    --default-color:whitesmoke;
+    --darkest-background:#1a1a1a81;
+}
