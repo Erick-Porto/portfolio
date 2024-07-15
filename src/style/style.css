@@ -156,6 +156,17 @@ textarea{
     background-color: var(--color-palette-1);
 }
 
+#src-forms .title{
+    font-weight: 600;
+    font-size: 30px;
+    font-style: normal;
+    text-transform: uppercase;
+    transform: rotate(270deg);
+    margin: 0;
+    position: absolute;
+    left: 0;
+}
+
 .about{
     text-align: justify;
     padding: 0 15px;
@@ -188,6 +199,32 @@ textarea{
     color: var(--color-palette-3);
 }
 
+.card{
+    border-radius: 25px;
+    background-color: #eeeee6;
+    transition: 0.5 ease;
+}
+
+.card-content, .image-content{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding: 15px;
+}
+
+.card-image{
+    position: relative;
+    height: 150px;
+    width: 150px;
+}
+  
+.card-image .card-img{
+    height: 100%;
+    width: 100%;
+    object-fit: cover;
+    border-radius: 50%;
+}
+
 .centralizer{
     align-items: center;
     display: flex;
@@ -200,7 +237,12 @@ textarea{
 }
 
 .container{
-    padding: 0 8%;
+    max-height: 100%;
+    min-height: 100%;
+    padding: 2% 8%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
 }
 
 .default{
@@ -244,11 +286,37 @@ textarea{
     border-radius: 100%;
 }
 
-.shadow{
-    box-shadow: rgba(17, 12, 46, 0.15) 0px 48px 100px 0px;
+.project-name{
+    font-size: 18px;
+    font-weight: 500;
+    color: #333;
+    text-transform: uppercase;
 }
 
-.slide{
+.project-date{
+    font-size: 14px;
+    color: #707070;
+    text-align: center;
+}
+
+.project-repos-url{
+    border: none;
+    font-size: 16px;
+    color: #FFF;
+    padding: 8px 12px;
+    background-color: #415a77;
+    border-radius: 6px;
+    margin: 10px;
+    cursor: pointer;
+    text-decoration: none;
+    transition: all 0.3s ease;
+}
+
+.project-repos-url:hover{
+    background: #80a8d7;
+}
+
+.section-slide{
     display: flex;
     flex-direction: column;
     justify-content: center;
@@ -256,6 +324,22 @@ textarea{
     width: 100%;
     box-shadow: 0 -1px 10px rgba(0,0,0, .7);;
     transform-style: inherit;
+}
+
+.shadow{
+    box-shadow: rgba(17, 12, 46, 0.15) 0px 48px 100px 0px;
+}
+
+.slide-container{
+    max-width: 1120px;
+    width: 100%;
+    padding: 40px 0;
+}
+  
+.slide-content{
+    margin: 0 40px;
+    overflow: hidden;
+    border-radius: 25px;
 }
 
 .submit-button{
@@ -330,17 +414,20 @@ textarea{
     color: var(--color-palette-4);
 }
 
-@media (max-width: 700px) {
+@media screen and (max-width: 768px) { 
     .container form{
-      padding: 10px 0 0 0;
+        padding: 10px 0 0 0;
     }
     .container form .form-row{
-      display: block;
+        display: block;
     }
     form .form-row .input-data{
-      margin: 35px 0!important;
+        margin: 35px 0!important;
+    }
+    .slide-content{
+        margin: 0 10px;
     }
     .submit-btn .input-data{
-      width: 40%!important;
+        width: 40%!important;
     }
-  }
+}

@@ -4,6 +4,8 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" type="text/css" href="./src/style/style.css">
+    <link rel="stylesheet" type="text/css" href="./src/style/test.css">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/gh/freeps2/a7rarpress@main/swiper-bundle.min.css">
     <link rel="stylesheet" type="text/css" href="./src/style/config.css">
     <title>Erick Porto</title>
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
@@ -36,7 +38,7 @@
     <section id="src-hw">
         <div class="centralizer ta-center">
             <img src="./src/images/profile.jpeg" class="profile-image">
-            <span class="title">Olá, sou Erick. Seja bem-vindo ao meu portifolio.</span>
+            <span class="title">Olá, sou Erick. Seja bem-vindo ao meu portfolio.</span>
             <br/>
             <div>
                 <a class="button" target="_blank" href="./src/pdf/curriculo-extenso.pdf">Currículo</a>
@@ -49,18 +51,18 @@
         </div>
     </section>
 
-    <section id="src-portfolio" class="slide">
+    <section id="src-portfolio" class="section-slide">
         <div class="container">
-            <div class="carousel-p">
-                <h1>Projetos</h1>
+            <div class="slide-container swiper">
+                <div class="slide-content">
+                    <div id="portfolio" class="card-wrapper swiper-wrapper"></div>
+                </div>
             </div>
-            <div class="carousel-s">
-                <h1>_________</h1>
-            </div>
+            
         </div>
     </section>
 
-    <section id="src-about" class="slide">
+    <section id="src-about" class="section-slide">
         <div class="container">
             <div class="about-card">
                 <img src="./src/images/profile.jpeg" class="about-image">
@@ -94,9 +96,9 @@
         </div>
     </section>
 
-    <section id="src-forms" class="slide">
+    <section id="src-forms" class="section-slide">
         <div class="container">
-            <span class="title">Entre em contato</span>
+            <span class="title">Contato</span>
             <form action="#">
                 <div class="form-row">
                    <div class="input-data">
@@ -145,5 +147,10 @@
             </div>
         </footer>
     </section>
+
+    
 </body>
+<script src="src/js/api_consume.js"></script>
+<script src="//cdn.jsdelivr.net/gh/freeps2/a7rarpress@main/swiper-bundle.min.js"></script>
+<script src="src/js/slider.js"></script>
 </html>
