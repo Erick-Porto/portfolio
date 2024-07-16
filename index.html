@@ -99,10 +99,13 @@
     <section id="src-forms" class="section-slide">
         <div class="container">
             <span class="title">Contato</span>
-            <form action="#">
+            <form action="https://formsubmit.co/decbdf33b3fea80245a15fc87c941833 " method="POST">
+                <input type="hidden" name="_next" value="https://erick-porto.github.io/portfolio/tkx.html">
+                <input type="hidden" name="_captcha" value="false">
+                <input type="hidden" name="_template" value="box">
                 <div class="form-row">
                    <div class="input-data">
-                      <input id="name" type="text" required>
+                      <input name="remetente" id="name" type="text" required>
                       <div class="underline"></div>
                       <label for="name">Nome Completo</label>
                    </div>
@@ -110,12 +113,12 @@
 
                 <div class="form-row">
                    <div class="input-data">
-                      <input id="email" type="text" required>
+                      <input name="email" id="email" type="text" required>
                       <div class="underline"></div>
                       <label for="email">Endereço de E-mail</label>
                    </div>
                    <div class="input-data">
-                      <input id="subject" type="text" required>
+                      <input name="_subject" id="subject" type="text" required>
                       <div class="underline"></div>
                       <label for="subject">Assunto</label>
                    </div>
@@ -123,7 +126,7 @@
 
                 <div class="form-row">
                     <div class="input-data textarea">
-                        <textarea id="content" rows="8" maxlength="354" cols="80" required></textarea>
+                        <textarea name="message" id="content" rows="8" maxlength="354" cols="80" required></textarea>
                         <br />
                         <div class="underline"></div>
                         <label for="content">Digite sua mensagem</label>
