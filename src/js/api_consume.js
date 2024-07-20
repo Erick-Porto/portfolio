@@ -4,7 +4,6 @@ function getGitHubAPI(){
         if(!res.ok) throw new Error(res.status);
         const data = await res.json();
         data.map( i => {
-            getLanguages(`${i.languages_url}`);
             
             document.getElementById('portfolio').innerHTML = `
             <div class="card swiper-slide">
