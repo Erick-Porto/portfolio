@@ -238,6 +238,7 @@ textarea{
 }
 
 .container{
+    overflow:hidden;
     max-height: 100%;
     min-height: 100%;
     padding: 2% 8%;
@@ -400,6 +401,10 @@ textarea{
     transition: transform 0.3s ease;
 }
 
+.vws{
+    display: none;
+}
+
 .work{
     position: absolute;
     bottom: 2%;
@@ -415,7 +420,7 @@ textarea{
     color: var(--color-palette-4);
 }
 
-@media screen and (max-width: 768px) { 
+@media screen and (max-width: 900px) {
     .container form{
         padding: 10px 0 0 0;
     }
@@ -431,4 +436,51 @@ textarea{
     .submit-btn .input-data{
         width: 40%!important;
     }
+    #src-forms .title {
+        top: 20%;
+        transform: rotate(0deg);
+        left: 35%;
+    }
+
+    .about-card {
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .about-card img{
+        width: 80%;
+        margin-bottom: 5%;
+        border-radius: 5px;
+    }
+    
+    .button{
+        text-align: center;
+        margin:0;
+    }
+
+    .buttons{
+        display: flex;
+        flex-direction: column;
+        gap: 10px;
+    }
+
+    .cls{
+        display: none;
+    }
+
+    .profile-image {
+        width: 100%;
+    }
+
+    .title{
+        margin: 20px;
+    }
+
+    .vws{
+        display: block;
+    }
+}
+
+@media screen and (min-width: 768px) {
+    
 }
